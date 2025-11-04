@@ -58,7 +58,7 @@ export const Navbar = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="visivle lg:hidden text-3xl text-gray-700"
+            className="visivle lg:hidden text-3xl text-gray-700 cursor-pointer"
           >
             {isOpen ? <HiOutlineX /> : <HiOutlineMenu />}
           </button>

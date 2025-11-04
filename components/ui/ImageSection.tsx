@@ -24,12 +24,12 @@ export default function ImageSection() {
     },
   ];
   return (
-    <div className="container grid md:grid-cols-3 sm:grid-cols-1 gap-4 px-4">
+    <div className="w-full grid md:grid-cols-3 sm:grid-cols-1 gap-4 p-10">
       {imgSection.map((item) => {
         return (
           <Link
             href="#"
-            className="relative h-80  overflow-hidden group"
+            className="relative h-60 lg:h-80  overflow-hidden group"
             key={item.title}
           >
             <Image src={item.src} fill alt={item.alt} />
@@ -59,7 +59,7 @@ export default function ImageSection() {
                     },
                     hover: { y: 0 },
                   }}
-                  className="font-heading pb-4 z-10 font-bold"
+                  className="font-heading pb-4 z-10 text-shadow-lg"
                 >
                   {item.title}
                 </motion.p>
@@ -72,7 +72,7 @@ export default function ImageSection() {
                       transition: { ease: "easeOut", delay: 0.2 },
                     },
                   }}
-                  className="text-background text-xl z-10"
+                  className="text-background text-lg lg:text-xl z-10"
                 >
                   {item.subTitle}
                 </motion.p>

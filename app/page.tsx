@@ -84,7 +84,7 @@ export default function Home() {
 
         {/* Right - Content */}
         <div className="md:w-1/2 w-full h-1/2 md:h-full flex items-center justify-center bg-white">
-          <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-col items-center justify-center text-center px-2">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground leading-tight">
               It&apos;s All About The Details. <br />
               When It Comes To Design.
